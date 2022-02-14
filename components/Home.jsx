@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { View,Text} from 'react-native';
+import { 
+    StyleSheet,
+    View,
+    Text} from 'react-native';
 
 import arrayPic  from './pics/arrayimg1.png';
 import arrayPic2 from './pics/arrayimg2.png'; 
 
-function Home() {
+const Home =()=> {
  
     return (
     

@@ -1,18 +1,33 @@
-function HomeScreen() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-       
-   
-        <Image 
-          source={arrayPic} 
-          style={styles.arrayImg}
-          />
-   <Text>Home Screen</Text>
-  
-      {/* <Text>app</Text> */}
-      
-      </View>
-    );
-  }
+import * as React from 'react';
 
-  export default HomeScreen; 
+import {
+  Text,
+  View,
+  Image,
+  Button,
+} from 'react-native';
+
+function HomeScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+   
+    >
+     
+ 
+      <Image 
+        source={arrayPic} 
+        style={styles.arrayImg} 
+        //onPress={() => navigation.navigate('Options')}
+        />
+ <Text>Home Screen</Text>
+ <Button
+        title="see options"
+        onPress={() => navigation.navigate('Options')}
+      />
+    {/* <Text>app</Text> */}
+    
+    </View>
+  );
+}
+
+export default HomeScreen; 
