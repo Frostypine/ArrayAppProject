@@ -16,26 +16,36 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
+
+//import Home from './components/Home' ; 
+//import HomeScreen from './components/HomeScreen'
+
+// function HomeScreen() {
+//   return (
+//     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+//       <Text>Home Screen</Text>
+//     </View>
+//   );
+// }
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
  
 
-  return (
+  return ( 
+  <React.Fragment> 
     <NavigationContainer>
-    <Stack.Navigator>
-    <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
+     
+    {/*
+     <Stack.Navigator>
+    <Stack.Screen name="Home" component={Home} />
+    </Stack.Navigator>  
+    <Home/> 
+    
+    */}
     </NavigationContainer>
-      
+      </React.Fragment>
   );
 };
 
